@@ -10,7 +10,7 @@ console.log(`Número escolhido: ${computerNumber}`);
 
 let turnCount = 1;
 while (turnCount <= 10) {
-  const userChoice = Number.parseInt(prompt("Escolha um número"));
+  const userChoice = Number.parseInt(prompt("Escolha um número") ?? "");
   prompt(`Turno ${turnCount}: Escolha um número`);
   const isInvalid = Number.isNaN(userChoice);
 
